@@ -1,0 +1,309 @@
+{
+  "siteInfo": {
+    "name": "International & BD Tour",
+    "slogan": "Discover Amazing Places Around The World",
+    "description": "Your trusted travel partner for Bangladesh and international tours"
+  },
+  
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Cox's Bazar",
+      "country": "Bangladesh",
+      "type": "Beach",
+      "image": "https://i.ibb.co.com/q3tnwwc9/cox.jpg",
+      "description": "World's longest natural sea beach with golden sands and beautiful sunsets.",
+      "highlights": ["120km Beach", "Sunset Point", "Himchori Waterfall", "Inani Beach"],
+      "bestTime": "November to February",
+      "priceRange": "$$",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Sundarbans",
+      "country": "Bangladesh", 
+      "type": "Forest",
+      "image": "https://i.ibb.co.com/C5th5sFg/Sundarbans.jpg",
+      "description": "Largest mangrove forest in the world and UNESCO World Heritage Site.",
+      "highlights": ["Royal Bengal Tiger", "Mangrove Forest", "Wildlife Safari", "River Cruise"],
+      "bestTime": "October to March",
+      "priceRange": "$$$",
+      "rating": 4.9
+    },
+    {
+      "id": 3,
+      "name": "Sylhet",
+      "country": "Bangladesh",
+      "type": "Hill Station",
+      "image": "https://i.ibb.co.com/RkYXN2ds/Sylhet.jpg",
+      "description": "Land of tea gardens, hills, and natural beauty in Northeast Bangladesh.",
+      "highlights": ["Tea Gardens", "Jaflong", "Ratargul Swamp Forest", "Lalakhal"],
+      "bestTime": "October to April",
+      "priceRange": "$$",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "name": "Bangkok",
+      "country": "Thailand",
+      "type": "City",
+      "image": "https://i.ibb.co.com/C3zws7px/Bangkok.jpg",
+      "description": "Vibrant capital city of Thailand known for temples, street food, and nightlife.",
+      "highlights": ["Grand Palace", "Floating Market", "Street Food", "Temples"],
+      "bestTime": "November to February", 
+      "priceRange": "$$$",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "name": "Bali",
+      "country": "Indonesia",
+      "type": "Island",
+      "image": "https://i.ibb.co.com/nsrgfSWZ/best-beaches-in-bali.jpg",
+      "description": "Tropical paradise known for beaches, temples, and unique culture.",
+      "highlights": ["Beaches", "Temples", "Rice Terraces", "Waterfalls"],
+      "bestTime": "April to October",
+      "priceRange": "$$$",
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "name": "Kuala Lumpur",
+      "country": "Malaysia",
+      "type": "City",
+      "image": "https://i.ibb.co.com/QFgsJQf7/Kuala-Lumpur.jpg",
+      "description": "Modern metropolis with iconic Petronas Towers and rich cultural heritage.",
+      "highlights": ["Petronas Towers", "Batu Caves", "Shopping", "Local Cuisine"],
+      "bestTime": "May to July",
+      "priceRange": "$$",
+      "rating": 4.5
+    },
+    {
+      "id": 7,
+      "name": "Saint Martin Island",
+      "country": "Bangladesh",
+      "type": "Island",
+      "image": "https://i.ibb.co.com/RkwtZMP1/saint.jpg",
+      "description": "The only coral island of Bangladesh with crystal clear blue water.",
+      "highlights": ["Coral Reef", "Blue Water", "Beach Activities", "Sunset View"],
+      "bestTime": "October to April",
+      "priceRange": "$$",
+      "rating": 4.7
+    },
+    {
+      "id": 8,
+      "name": "Singapore",
+      "country": "Singapore",
+      "type": "City",
+      "image": "https://i.ibb.co.com/rGfNQ85z/Singapore-City-Experience.jpg",
+      "description": "Modern city-state with stunning architecture and multicultural cuisine.",
+      "highlights": ["Marina Bay", "Gardens by the Bay", "Sentosa Island", "Shopping"],
+      "bestTime": "February to April",
+      "priceRange": "$$$",
+      "rating": 4.8
+    }
+  ],
+
+  "tourPackages": [
+    {
+      "id": 1,
+      "name": "Cox's Bazar Beach Paradise",
+      "duration": "3 Days 2 Nights",
+      "price": 8500,
+      "image": "https://i.ibb.co.com/q3tnwwc9/cox.jpg",
+      "description": "Complete beach experience with hotel stay and local sightseeing.",
+      "inclusions": ["Hotel Stay", "Breakfast", "Beach Activities", "Local Guide"],
+      "destinationId": 1
+    },
+    {
+      "id": 2, 
+      "name": "Sundarbans Adventure Safari",
+      "duration": "4 Days 3 Nights",
+      "price": 12500,
+      "image": "https://i.ibb.co.com/Vc9kBzWm/Sundarbans-Adventure-Safari.jpg",
+      "description": "Wildlife safari and boat cruise in the mangrove forest.",
+      "inclusions": ["Boat Cruise", "Guide", "Meals", "Forest Permit"],
+      "destinationId": 2
+    },
+    {
+      "id": 3,
+      "name": "Sylhet Tea Garden Tour",
+      "duration": "3 Days 2 Nights", 
+      "price": 7500,
+      "image": "https://i.ibb.co.com/mFGnh9Jf/Sylhet-Tea-Garden.jpg",
+      "description": "Explore tea gardens, waterfalls and natural beauty of Sylhet.",
+      "inclusions": ["Hotel Stay", "Meals", "Tea Garden Visit", "Local Guide"],
+      "destinationId": 3
+    },
+    {
+      "id": 4,
+      "name": "Thailand Cultural Tour",
+      "duration": "7 Days 6 Nights", 
+      "price": 45000,
+      "image": "https://i.ibb.co.com/991s3PJG/costumbres-tailandia.jpg",
+      "description": "Explore Bangkok's temples, markets, and cultural sites.",
+      "inclusions": ["Hotel", "Breakfast", "Tours", "Airport Transfer"],
+      "destinationId": 4
+    },
+    {
+      "id": 5,
+      "name": "Bali Island Paradise",
+      "duration": "8 Days 7 Nights",
+      "price": 52000,
+      "image": "https://i.ibb.co.com/mrvHBdh2/Bali-Island-Paradise.jpg", 
+      "description": "Complete Bali experience with beaches, temples and cultural shows.",
+      "inclusions": ["Resort Stay", "Meals", "Tours", "Airport Transfer"],
+      "destinationId": 5
+    },
+    {
+      "id": 6,
+      "name": "Malaysia City Tour",
+      "duration": "5 Days 4 Nights",
+      "price": 35000,
+      "image": "https://i.ibb.co.com/S4FkVMBG/Malaysia-City-Tour.jpg",
+      "description": "Explore Kuala Lumpur's modern attractions and cultural sites.",
+      "inclusions": ["Hotel", "Breakfast", "City Tours", "Transport"],
+      "destinationId": 6
+    },
+    {
+      "id": 7,
+      "name": "Saint Martin Island Getaway",
+      "duration": "2 Days 1 Night",
+      "price": 6000,
+      "image": "https://i.ibb.co.com/RkwtZMP1/saint.jpg",
+      "description": "Short trip to the beautiful coral island of Bangladesh.",
+      "inclusions": ["Resort Stay", "Meals", "Beach Activities", "Boat Ride"],
+      "destinationId": 7
+    },
+    {
+      "id": 8,
+      "name": "Singapore City Experience",
+      "duration": "6 Days 5 Nights",
+      "price": 48000,
+      "image": "https://i.ibb.co.com/rGfNQ85z/Singapore-City-Experience.jpg",
+      "description": "Modern city tour with amazing attractions and shopping.",
+      "inclusions": ["Hotel", "Breakfast", "Attraction Tickets", "City Tour"],
+      "destinationId": 8
+    }
+  ],
+
+  "gallery": [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/sp95k335/Cox-s-Bazar-Beach-Paradise.jpg",
+      "title": "Cox's Bazar Beach",
+      "category": "Bangladesh"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/R4Gmm2xC/trees-Sundarbans.webp", 
+      "title": "Sundarbans Mangrove Forest",
+      "category": "Bangladesh"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/mFGnh9Jf/Sylhet-Tea-Garden.jpg",
+      "title": "Sylhet Tea Gardens",
+      "category": "Bangladesh"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/XfjqZMT0/Bangkok-Temple.jpg",
+      "title": "Bangkok Grand Palace",
+      "category": "International" 
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/nsrgfSWZ/best-beaches-in-bali.jpg",
+      "title": "Bali Beaches",
+      "category": "International"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/7JYqT3W2/Kuala-Lumpur-Skyline.jpg",
+      "title": "Kuala Lumpur Skyline",
+      "category": "International"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co.com/RkwtZMP1/saint.jpg",
+      "title": "Saint Martin Island",
+      "category": "Bangladesh"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co.com/ycTLBqyX/Singapore-Marina-Bay.jpg",
+      "title": "Singapore Marina Bay",
+      "category": "International"
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co.com/6JckCz2x/Mountain-Landscape.jpg",
+      "title": "Mountain Landscape",
+      "category": "International"
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co.com/Y4HShjnH/Waterfall-Adventure.jpg",
+      "title": "Waterfall Adventure",
+      "category": "International"
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co.com/qFY98Kdp/Tropical-Beach.jpg",
+      "title": "Tropical Beach",
+      "category": "International"
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co.com/N69dXk4D/Hill-Station-View.jpg",
+      "title": "Hill Station View",
+      "category": "Bangladesh"
+    }
+  ],
+
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "position": "Travel Expert",
+      "image": "https://i.ibb.co.com/vfqFsVr/John-Smith.jpg",
+      "description": "10+ years experience in international tours"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson", 
+      "position": "Bangladesh Specialist",
+      "image": "https://i.ibb.co.com/Nd3P3mm5/Sarah-Johnson.jpg",
+      "description": "Expert in Bangladesh tourism and culture"
+    },
+    {
+      "id": 3,
+      "name": "Mike Chen",
+      "position": "Adventure Guide",
+      "image": "https://i.ibb.co.com/QvRK07GX/Mike-Chen.jpg", 
+      "description": "Specialized in adventure and eco-tourism"
+    },
+    {
+      "id": 4,
+      "name": "Emma Davis",
+      "position": "Customer Relations",
+      "image": "https://i.ibb.co.com/Q3y7xp0C/Emma-Davis.jpg",
+      "description": "Ensuring best customer experience"
+    },
+    {
+      "id": 5,
+      "name": "David Wilson",
+      "position": "Tour Operations",
+      "image": "https://i.ibb.co.com/0xdRY2x/David-Wilson.jpg",
+      "description": "Managing tour logistics and operations"
+    },
+    {
+      "id": 6,
+      "name": "Lisa Brown",
+      "position": "Marketing Manager",
+      "image": "https://i.ibb.co.com/0jRcRynD/Lisa-Brown.jpg",
+      "description": "Promoting amazing travel experiences"
+    }
+  ]
+}
