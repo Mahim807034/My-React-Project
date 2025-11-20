@@ -31,13 +31,13 @@ const Home = ({ darkMode, data }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/destinations"
-              className="bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-100"
+              className="bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-100 transition-colors duration-300"
             >
               Explore Destinations
             </Link>
             <Link
               to="/packages"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-green-600"
+              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-green-600 transition-colors duration-300"
             >
               View Packages
             </Link>
@@ -109,7 +109,6 @@ const Home = ({ darkMode, data }) => {
                         {destination.priceRange}
                       </span>
 
-                      {/* ✅ Explore button now goes to dynamic destination page */}
                       <Link
                         to={`/destination/${destination.id}`}
                         className={`flex items-center space-x-1 text-sm font-semibold ${
@@ -193,7 +192,6 @@ const Home = ({ darkMode, data }) => {
                           ৳{pkg.price.toLocaleString()}
                         </span>
 
-                        {/* ✅ Details button now goes to dynamic package page */}
                         <Link
                           to={`/package/${pkg.id}`}
                           className={`flex items-center space-x-1 text-sm font-semibold ${
