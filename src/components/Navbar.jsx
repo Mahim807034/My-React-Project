@@ -34,8 +34,8 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
               <span className={`font-bold text-lg ${darkMode ? 'text-white' : 'text-green-600'}`}>T</span>
             </div>
             <div className="hidden sm:block">
-              <span className="text-white font-bold text-xl block">{siteInfo.name}</span>
-              <p className="text-green-200 text-xs">{siteInfo.slogan}</p>
+              <span className="text-white font-bold text-xl block" style={{ fontFamily: "'Griffy', cursive" }}>{siteInfo.name}</span>
+              <p className="text-green-200 text-xs" style={{ fontFamily: "'Montserrat', sans-serif" }}>{siteInfo.slogan}</p>
             </div>
           </Link>
 
@@ -52,6 +52,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                     ? 'bg-gray-800 border-gray-600 text-white focus:ring-green-400 focus:border-green-400' 
                     : 'bg-white border-green-200 text-gray-800 focus:ring-green-500 focus:border-green-500'
                 }`}
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
               />
               <button
                 type="submit"
@@ -72,13 +73,13 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
             <div className="hidden lg:flex items-center space-x-4">
               {/* Navigation Links */}
               <div className="flex items-center space-x-4 mr-3">
-                <Link to="/" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm">Home</Link>
-                <Link to="/destinations" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm">Destinations</Link>
-                <Link to="/packages" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm">Packages</Link>
-                <Link to="/about" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm">About</Link>
-                <Link to="/contact" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm">Contact</Link>
+                <Link to="/" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>Home</Link>
+                <Link to="/destinations" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>Destinations</Link>
+                <Link to="/packages" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>Packages</Link>
+                <Link to="/about" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>About</Link>
+                <Link to="/contact" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>Contact</Link>
                 {isLoggedIn && (
-                  <Link to="/bookings" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm">My Bookings</Link>
+                  <Link to="/bookings" className="text-white hover:text-green-200 transition-colors duration-300 font-medium text-sm" style={{ fontFamily: "'Montserrat', sans-serif" }}>My Bookings</Link>
                 )}
               </div>
 
@@ -95,7 +96,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                 {cartItemsCount > 0 && (
                   <span className={`absolute -top-1 -right-1 w-4 h-4 rounded-full text-xs flex items-center justify-center font-bold ${
                     darkMode ? 'bg-red-500 text-white' : 'bg-red-500 text-white'
-                  }`}>
+                  }`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     {cartItemsCount}
                   </span>
                 )}
@@ -126,6 +127,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                           ? 'text-gray-300 hover:text-white hover:bg-gray-700' 
                           : 'text-white hover:bg-green-500'
                       }`}
+                      style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
                       <div className={`p-1 rounded-full ${darkMode ? 'bg-gray-700' : 'bg-green-500'}`}>
                         <FaUser className={`text-sm ${darkMode ? 'text-green-400' : 'text-white'}`} />
@@ -140,7 +142,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                     {profileDropdownOpen && (
                       <div className={`absolute right-0 top-full mt-2 w-48 rounded-lg shadow-lg py-2 z-50 ${
                         darkMode ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
-                      }`}>
+                      }`} style={{ fontFamily: "'Montserrat', sans-serif" }}>
                         <Link
                           to="/profile"
                           onClick={() => setProfileDropdownOpen(false)}
@@ -207,6 +209,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                         ? 'bg-green-600 text-white hover:bg-green-700' 
                         : 'bg-white text-green-600 hover:bg-green-50'
                     }`}
+                    style={{ fontFamily: "'Montserrat', sans-serif" }}
                   >
                     Login
                   </button>
@@ -232,21 +235,21 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
         {mobileMenuOpen && (
           <div className={`lg:hidden border-t ${darkMode ? 'border-gray-700' : 'border-green-500'} py-3`}>
             <div className="flex flex-col space-y-3">
-              <Link to="/" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-              <Link to="/destinations" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)}>Destinations</Link>
-              <Link to="/packages" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)}>Packages</Link>
-              <Link to="/about" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)}>About</Link>
-              <Link to="/contact" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+              <Link to="/" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>Home</Link>
+              <Link to="/destinations" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>Destinations</Link>
+              <Link to="/packages" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>Packages</Link>
+              <Link to="/about" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>About</Link>
+              <Link to="/contact" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>Contact</Link>
               
               {isLoggedIn && (
-                <Link to="/bookings" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)}>My Bookings</Link>
+                <Link to="/bookings" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>My Bookings</Link>
               )}
               
               {/* Cart Link - Always Visible in Mobile Menu */}
-              <Link to="/cart" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 flex items-center text-sm" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/cart" className="text-white hover:text-green-200 transition-colors duration-300 font-medium py-1 flex items-center text-sm" onClick={() => setMobileMenuOpen(false)} style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 Cart
                 {cartItemsCount > 0 && (
-                  <span className="ml-2 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center font-bold">
+                  <span className="ml-2 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center font-bold" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     {cartItemsCount}
                   </span>
                 )}
@@ -262,8 +265,8 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                           <FaUser className={`text-sm ${darkMode ? 'text-green-400' : 'text-white'}`} />
                         </div>
                         <div>
-                          <p className="text-white text-sm font-medium">{userData?.name}</p>
-                          <p className="text-green-200 text-xs">{userData?.email}</p>
+                          <p className="text-white text-sm font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>{userData?.name}</p>
+                          <p className="text-green-200 text-xs" style={{ fontFamily: "'Montserrat', sans-serif" }}>{userData?.email}</p>
                         </div>
                       </div>
                       <button onClick={() => setDarkMode(!darkMode)} className={`p-1 rounded-full transition-all duration-300 ${darkMode ? 'bg-gray-700 text-yellow-400' : 'bg-green-500 text-white'}`}>
@@ -279,6 +282,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                             ? 'bg-gray-700 text-white hover:bg-gray-600' 
                             : 'bg-green-500 text-white hover:bg-green-600'
                         }`}
+                        style={{ fontFamily: "'Montserrat', sans-serif" }}
                       >
                         Profile
                       </Link>
@@ -290,6 +294,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                             ? 'bg-blue-700 text-white hover:bg-blue-600' 
                             : 'bg-blue-500 text-white hover:bg-blue-600'
                         }`}
+                        style={{ fontFamily: "'Montserrat', sans-serif" }}
                       >
                         Bookings
                       </Link>
@@ -304,6 +309,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                           ? 'bg-red-900 text-red-300 hover:bg-red-800' 
                           : 'bg-red-500 text-white hover:bg-red-600'
                       }`}
+                      style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
                       Logout
                     </button>
@@ -314,6 +320,7 @@ const Navbar = ({ darkMode, setDarkMode, onLoginClick, onSearch, isLoggedIn, onL
                     className={`w-full py-2 rounded-lg font-semibold transition-all duration-300 text-sm ${
                       darkMode ? 'bg-green-600 text-white' : 'bg-white text-green-600'
                     }`}
+                    style={{ fontFamily: "'Montserrat', sans-serif" }}
                   >
                     Login
                   </button>
