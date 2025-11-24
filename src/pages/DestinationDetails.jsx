@@ -65,7 +65,6 @@ const DestinationDetails = ({ darkMode, data, addToCart }) => {
               alt={destination.name}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             <div className="absolute bottom-6 left-6 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">{destination.name}</h1>
               <div className="flex items-center space-x-4">

@@ -68,7 +68,6 @@ const PackageDetails = ({ darkMode, data, addToCart }) => {
                 e.target.src = 'https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?w=800&h=400&fit=crop';
               }}
             />
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             <div className="absolute bottom-6 left-6 text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">{packageItem.name}</h1>
               <div className="flex items-center space-x-4">

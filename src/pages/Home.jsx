@@ -12,13 +12,26 @@ const Home = ({ darkMode, data }) => {
   const featuredDestinations = data.destinations.slice(0, 6);
   const featuredPackages = data.tourPackages.slice(0, 6);
 
+  // Banner image - beautiful travel background
+  const bannerImage = "https://i.ibb.co.com/j9J4wVrs/Bandarban.jpg";
+
   return (
     <div className={`min-h-screen ${darkMode ? "bg-gray-900" : "bg-green-50"}`}>
 
-      {/* Hero Section */}
-      <section className={`relative py-20 ${darkMode ? "bg-gray-800" : "bg-green-600"}`}>
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+      {/* Hero Section with Banner Image */}
+      <section className="relative py-32 lg:py-40 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bannerImage})`
+          }}
+        >
+        </div>
+        
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 text-center text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             {data.siteInfo.name}
           </h1>
           <p className="text-xl md:text-2xl text-green-100 mb-8">
@@ -31,7 +44,7 @@ const Home = ({ darkMode, data }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/destinations"
-              className="bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-100 transition-colors duration-300"
+              className="bg-green-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-colors duration-300 shadow-lg"
             >
               Explore Destinations
             </Link>
@@ -109,6 +122,7 @@ const Home = ({ darkMode, data }) => {
                         {destination.priceRange}
                       </span>
 
+                      {/* View Details Link - Working */}
                       <Link
                         to={`/destination/${destination.id}`}
                         className={`flex items-center space-x-1 text-sm font-semibold ${
@@ -192,6 +206,7 @@ const Home = ({ darkMode, data }) => {
                           ৳{pkg.price.toLocaleString()}
                         </span>
 
+                        {/* View Details Link - Working */}
                         <Link
                           to={`/package/${pkg.id}`}
                           className={`flex items-center space-x-1 text-sm font-semibold ${
